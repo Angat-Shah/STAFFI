@@ -5,8 +5,11 @@
 
 ## 🎯 Abstract
 
-STAFFI aims to revolutionize human resource management by combining blockchain's immutability and AI's analytical power. The platform empowers organizations to manage employee records, analyze performance, automate payrolls, and issue trustless certifications.
+Most HR systems today lack transparency, are vulnerable to data manipulation, and fail to provide proactive insights into employee performance and engagement.
 
+STAFFI solves this by combining blockchain for secure, immutable employee records and AI for predictive workforce analytics. It also issues NFT-based certificates to validate employee achievements transparently.
+
+This system helps companies automate HR operations, make smarter decisions, and build trust with their employees — all within a simple, user-friendly web platform.
 It integrates:
 
 - **Blockchain** to securely store sensitive HR data such as employment records, leave approvals, and payroll events.
