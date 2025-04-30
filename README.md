@@ -1,7 +1,3 @@
-# STAFFI: Full Project Blueprint
-
-## 🏷 Project Name
-
 **STAFFI**\
 "Web3-Enabled HR Management System with AI-Powered Workforce Analytics"
 
@@ -19,24 +15,18 @@ It integrates:
 
 ---
 
-## 💻 Recommended Platform
-
-**Web Application** (Vite + React) — lightweight, fast, and optimized for rapid development and deployment.
-
----
-
 ## 🧠 Core Modules and Functionality
 
 | Module                | Description                         | Backend     | Blockchain              | AI               |
 | --------------------- | ----------------------------------- | ----------- | ----------------------- | ---------------- |
-| Auth & Wallet Connect | HR/Admin login using wagmi + wallet | ✅           | ❌                       | ❌                |
-| Employee Management   | Add/edit employee data              | ✅           | ✅ (final snapshot only) | ❌                |
-| Leave Management      | Apply and approve leaves            | ✅           | ✅ (after approval)      | ❌                |
-| Payroll Automation    | Log salary events                   | ✅ (trigger) | ✅ (recorded as proof)   | ❌                |
-| Performance Analytics | Predict engagement with OpenAI      | ✅           | ❌                       | ✅                |
-| Certificate NFTs      | Issue NFTs for achievements         | ✅           | ✅ (ERC721 standard)     | ❌                |
-| Feedback System       | Anonymous encrypted feedback        | ✅           | ❌ (or optional)         | ❌                |
-| Admin Dashboard       | Unified UI for all HR functions     | ✅           | ❌                       | ✅ (for insights) |
+| Auth & Wallet Connect | HR/Admin login using wagmi + wallet | ✅           |                        |                 |
+| Employee Management   | Add/edit employee data              | ✅           | ✅ (final snapshot only) |                 |
+| Leave Management      | Apply and approve leaves            | ✅           | ✅ (after approval)      |                 |
+| Payroll Automation    | Log salary events                   | ✅ (trigger) | ✅ (recorded as proof)   |                 |
+| Performance Analytics | Predict engagement with OpenAI      | ✅           |                        | ✅                |
+| Certificate NFTs      | Issue NFTs for achievements         | ✅           | ✅ (ERC721 standard)     |                 |
+| Feedback System       | Anonymous encrypted feedback        | ✅           |  (or optional)         |                 |
+| Admin Dashboard       | Unified UI for all HR functions     | ✅           |                       | ✅ (for insights) |
 
 ---
 
@@ -48,7 +38,7 @@ It integrates:
 | Styling               | TailwindCSS        | `npm install -D tailwindcss postcss autoprefixer` |
 | UI Components         | Shadcn/UI          | `npx shadcn-ui@latest init`                       |
 | Wallet                | wagmi + viem       | `npm install wagmi viem @rainbow-me/rainbowkit`   |
-| Backend               | Express.js         | `npm install express cors dotenv`                 |
+| Backend               | Node.js         | `npm install express cors dotenv`                 |
 | Database              | Supabase           | `npm install @supabase/supabase-js`               |
 | Blockchain            | Solidity + Hardhat | `npm install --save-dev hardhat`                  |
 | Smart Contract Access | ethers.js          | `npm install ethers`                              |
@@ -136,69 +126,4 @@ STAFFI/
 
 ---
 
-## 🚀 Deployment Setup
-
-- **Frontend**: Netlify
-- **Backend**: Railway
-- **Smart Contracts**: Hardhat + Polygon Mumbai
-- **Secrets & Keys**: `.env` file including:
-  - SUPABASE_URL
-  - SUPABASE_ANON_KEY
-  - RPC_URL
-  - PRIVATE_KEY
-  - OPENAI_API_KEY
-
----
-
-## ✅ Demo-Day Checklist
-
-- 3 end-to-end working flows (Employee Add, Leave Approval, AI Insight)
-- Live or screenshot fallback for each feature
-- Wallets pre-funded with Mumbai testnet MATIC
-- Clean and rehearsed 2-minute pitch
-
----
-
-## 🚨 Final Notes
-
-- All smart contract calls are handled by the backend.
-- HR and staff **never interact directly with wallets or gas fees**.
-- Only critical operations are written to the blockchain.
-- Design is clean, intuitive, and optimized for non-technical HR users.
-
----
-
-## 👥 Team Responsibilities
-
-### 🕷 Spider – Blockchain Architect & Contract Integrator
-
-- Build and deploy: `Employee.sol`, `Payroll.sol`, `NFTCert.sol`
-- Handle smart contract triggers
-- Share ABI & addresses with backend
-
-### 💻 Uttam – Frontend Lead & UI Architect
-
-- Set up Vite, Tailwind, Shadcn UI
-- Implement wallet connection and protected routes
-- Build core pages: Login, Dashboard, AI, Certificates
-- Connect to backend APIs for real-time updates
-
-### 🛠 Scutum – Backend Engineer & Logic Dev
-
-- Build Express server structure
-- Implement routes: `/add-employee`, `/leave`, `/payroll`, `/predict`
-- Integrate Supabase and ethers.js
-- Securely manage server wallet & blockchain access
-
-### 🤖 Sasuke – AI Specialist & QA Champion
-
-- Structure OpenAI prompts and backend integration
-- Run end-to-end testing for flows
-- Backup all demo assets and record testnet data
-
----
-
 > STAFFI isn’t just a hackathon project. It’s a blueprint for future-ready, AI-enhanced, blockchain-secure HR technology.
-
-**Go build the legend. 🚀**
-
